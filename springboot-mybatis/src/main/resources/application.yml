@@ -9,3 +9,14 @@ spring:
       url: 127.0.0.1:3306/user?useSSL=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
       username: root123
       password: Jdz112233
+
+# Mybatis 相关配置
+mybatis:
+  # xml 文件位置, src/main/resources 下 mapper文件夹中
+  mapper-locations: classpath:mapper/*.xml
+  # 数据库对应实体
+  type-aliases-package: com.frame.integration.springbootmybatis.entity
+  # 配置中心：
+  configuration:
+     # 应用驼峰式命名
+     map-underscore-to-camel-case: true
