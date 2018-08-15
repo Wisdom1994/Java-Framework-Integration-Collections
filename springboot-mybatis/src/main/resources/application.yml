@@ -1,0 +1,11 @@
+# 添加服务端口 add tomcat service port
+server:
+   port: 9527
+   
+# 数据源 spring.datasource
+spring:
+   datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: 127.0.0.1:3306/user?useSSL=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: root123
+      password: Jdz112233
