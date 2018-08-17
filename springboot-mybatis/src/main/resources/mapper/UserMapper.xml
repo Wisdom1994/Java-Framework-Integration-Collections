@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.frame.integration.springbootmybatis.dao">
+<mapper namespace="com.frame.integration.springbootmybatis.dao.UserDao">
 	<sql id="BASE_TABLE">
 		t_user
 	</sql>
@@ -39,10 +39,10 @@
 			<if test="phone != null">phone=#{phone,jdbcType=VARCHAR},</if>
 		</set>
 		WHERE
-			user_id=#{user_id,jdbcType=INTEGER}
+			user_id=#{userId,jdbcType=INTEGER}
 	</update>
 	
-	<select id="selectUserByPrimarykey" parameterType="java.lang.Integer">
+	<select id="selectUserByPrimarykey" parameterType="java.lang.Integer" resultType="com.frame.integration.springbootmybatis.entity.User">
 		SELECT
 			<include refid="BASE_COLUMN" />	
 		FROM
