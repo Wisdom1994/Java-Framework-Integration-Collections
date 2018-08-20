@@ -20,3 +20,12 @@ mybatis:
   configuration:
      # 应用驼峰式命名
      map-underscore-to-camel-case: true
+
+
+#pagehelper 物理分页插件
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+    returnPageInfo: check
