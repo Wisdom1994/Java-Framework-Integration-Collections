@@ -5,6 +5,6 @@
 #### 1.1 说明
   框架原始搭建采用 start.spring.io 构建的 springboot 项目，添加基础依赖为 MySQL，Mybatis
 #### 1.2 修改历史
-  &emsp 2018/8/15 上传完整框架
-  &emsp 2018/8/17 增加用户类，增加 **增删改查** 等相应 `service` 和 `controller`，上传 t_user.sql
-  &emsp 2018/8/20 增加 pagehelper 分页插件, 实现简单快捷物理分页
+&ensp 2018/8/15 上传完整框架
+&ensp 2018/8/17 增加用户类，增加 **增删改查** 等相应 `service` 和 `controller`，上传 t_user.sql
+&ensp 2018/8/20 增加 pagehelper 分页插件, 实现简单快捷物理分页
